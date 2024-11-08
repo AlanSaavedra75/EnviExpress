@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Remisiones</title>
+</head>
+<body>
+    <h1>Registro de Remisiones de Mercancía</h1>
+
+    <!-- Sección de Remitente -->
+    <section>
+        <h2>Datos del Remitente</h2>
+        <label for="remitente-nombre">Nombre completo:</label>
+        <input type="text" id="remitente-nombre"><br>
+        <label for="remitente-ciudad">Ciudad:</label>
+        <input type="text" id="remitente-ciudad"><br>
+        <label for="remitente-estado">Entidad Federativa:</label>
+        <input type="text" id="remitente-estado"><br>
+        <label for="remitente-domicilio">Domicilio:</label>
+        <input type="text" id="remitente-domicilio"><br>
+        <label for="remitente-cp">Código Postal:</label>
+        <input type="text" id="remitente-cp"><br>
+        <label for="remitente-telefono">Teléfono:</label>
+        <input type="text" id="remitente-telefono"><br>
+    </section>
+
+    <!-- Sección de Destinatario -->
+    <section>
+        <h2>Datos del Destinatario</h2>
+        <label for="destinatario-nombre">Nombre completo:</label>
+        <input type="text" id="destinatario-nombre"><br>
+        <label for="destinatario-ciudad">Ciudad:</label>
+        <input type="text" id="destinatario-ciudad"><br>
+        <label for="destinatario-estado">Entidad Federativa:</label>
+        <input type="text" id="destinatario-estado"><br>
+        <label for="destinatario-domicilio">Domicilio:</label>
+        <input type="text" id="destinatario-domicilio"><br>
+        <label for="destinatario-cp">Código Postal:</label>
+        <input type="text" id="destinatario-cp"><br>
+        <label for="destinatario-telefono">Teléfono:</label>
+        <input type="text" id="destinatario-telefono"><br>
+    </section>
+
+    <!-- Sección de Mercancía -->
+    <section>
+        <h2>Datos de la Mercancía</h2>
+        <label for="mercancia-descripcion">Descripción:</label>
+        <input type="text" id="mercancia-descripcion"><br>
+        <label for="mercancia-peso">Peso (kg):</label>
+        <input type="number" id="mercancia-peso"><br>
+        <label for="mercancia-largo">Largo (m):</label>
+        <input type="number" id="mercancia-largo"><br>
+        <label for="mercancia-ancho">Ancho (m):</label>
+        <input type="number" id="mercancia-ancho"><br>
+        <label for="mercancia-alto">Alto (m):</label>
+        <input type="number" id="mercancia-alto"><br>
+        <label for="mercancia-fecha-salida">Fecha de Salida (dd/mm/yyyy):</label>
+        <input type="text" id="mercancia-fecha-salida"><br>
+        <label for="mercancia-fecha-llegada">Fecha de Llegada (dd/mm/yyyy):</label>
+        <input type="text" id="mercancia-fecha-llegada"><br>
+        <label for="mercancia-precio">Precio del Servicio:</label>
+        <input type="number" id="mercancia-precio"><br>
+    </section>
+
+    <!-- Tabla para mostrar datos registrados -->
+    <h2>Registro de Envíos</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Remitente</th>
+                <th>Destinatario</th>
+                <th>Descripción</th>
+                <th>Peso</th>
+                <th>Dimensiones (LxAxH)</th>
+                <th>Fecha de Salida</th>
+                <th>Fecha de Llegada</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-registros">
+            <!-- Las filas se añadirán dinámicamente -->
+        </tbody>
+    </table>
+
+    <!-- Botón de Registro -->
+    <button id="boton-registrar">Registrar</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
